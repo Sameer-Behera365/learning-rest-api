@@ -18,7 +18,7 @@ app.post("/users", (req, res) => {
 
   return res.send(html);
 
-  //sameer
+
   
 });
 app
@@ -39,10 +39,16 @@ app.post("/api/users", (req, res) => {
   return res.json({ status: "workingonit" });
 });
 
+
+
+
+
 app.get("/api/users/:id", (req, res) => {
   const id = Number(req.params.id);
   const user = users.find((user) => user.id == id);
   return res.json(user);
 });
+
+//remember /api/users/:id",  lik thsi only u can use u need to put :id not just id ---> because  then it wont be treated as dynamic placeholder
 
 app.listen(PORT, () => console.log(`Server started at port ${PORT}`));
