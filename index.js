@@ -11,7 +11,15 @@ app.post("/users", (req, res) => {
       .map((user) => `<li> ${user.first_name} </li>`)
       .join("")} </ul>  
     `;
+
+
+
+
+
   return res.send(html);
+
+  //sameer
+  
 });
 app
   .route("/api/users/:id")
