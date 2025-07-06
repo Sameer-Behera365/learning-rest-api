@@ -1,3 +1,7 @@
+//i neamed this file as index.js because in the package json i have this file u want som eother name then change there also
+
+
+
 const express = require("express");
 const app = express();
 const users = require("./MOCK_DATA.json");
